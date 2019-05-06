@@ -13,8 +13,8 @@ public enum Operation {
     ADD("+",(i,j) -> i+j), 
     SUBTRACT("-", (i,j) -> i-j),  
     MULTIPLY("*", (i,j) -> i*j),
-    DIVIDE("/", (i,j) -> i/j), 
-    POWER("^", Math::pow);
+    //*not working* DIVIDE("/", (i,j) -> i/j), 
+    //*not working* POWER("^", Math::pow);
 ;
     /**
      * Get the operator using its symbol.
@@ -69,6 +69,7 @@ public enum Operation {
     public int compute( int a, int b ) {
         //TODO 5 implement compute
         return (int) operator.applyAsInt(a, b);
+        //*divide and power is never returning int*
     }
 
     private String getSymbol() {
