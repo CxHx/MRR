@@ -145,7 +145,7 @@ public class SimpleStreamDemo {
         
         } );
     }
-
+//*how to test strem methods, when student methods are not accessable in test*
     static class Student {
 
         static int studentSerialSeq = 0;
